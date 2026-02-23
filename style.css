@@ -1,3 +1,27 @@
+*{
+  font-family: "Times New Roman";
+} 
+.container{
+  display:flex;
+  flex-direction: column;
+  height:100vh;
+}
+.header{
+  flex:20%;
+  background-color: rainbow;
+}
+.menu{
+  flex:5%;
+  background-color: blue;
+}
+.content{
+  flex:65%;
+  background-color: red;
+}
+.fooler{
+  flex:10%;
+  background-color: purple;
+}
 .f1 {
   font-style: italic;
   font-weight:bold;
