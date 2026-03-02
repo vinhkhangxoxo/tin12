@@ -17,7 +17,6 @@
 }
 .content{
   flex:65%;
-  background-color: red;
 }
 .footer{
   flex:10%;
