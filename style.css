@@ -39,3 +39,8 @@
   text-transform: uppercase;
   color: red;
 }
+.menu a{
+  padding: 15px;20px;}
+.menu hover{
+  background-color: litghtgrey;
+  color:black;}
