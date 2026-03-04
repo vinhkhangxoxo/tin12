@@ -9,6 +9,9 @@
 .header{
   flex:20%;
   background-color: blue;
+  background-image: url('images/Beige Minimalist YouTube Channel Banner.png');
+  background-size:cover;
+  background-position:center;
 }
 .menu{
   flex:5%;
