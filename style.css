@@ -8,7 +8,7 @@
 }
 .header{
   flex:20%;
-  background-image: url('images/Beige Minimalist YouTube Channel Banner.png') 100%;
+  background-image: url('images/Beige Minimalist YouTube Channel Banner.png') center/100%;
 
 }
 .menu{
