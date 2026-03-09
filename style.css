@@ -1,49 +1,63 @@
-*{
-  font-family: "Times New Roman";
-} 
-.container{
-  display:flex;
-  flex-direction: column;
-  height:100vh;
+/* Tổng thể */
+* {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.header{
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Header - Phần bạn cần fix */
+.header {
+  flex: 20%;
   background-color: lightgrey;
-  flex:20%;
-  background-image: url("images/nq.jpg") center/100%;
+  background-image: url("images/nq.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; /* Quan trọng nhất: Giúp ảnh fit vừa vặn */
   aspect-ratio: 6/1;
 }
-.menu{
-  flex:5%;
-  background: #22C1C3;
+
+/* Menu */
+.menu {
+  flex: 5%;
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  padding: 10px 20px; /* Sửa lại cú pháp padding */
+  text-decoration: none;
+  color: white;
+}
+
+.menu a:hover { /* Sửa lại selector hover */
+  background-color: lightgrey;
+  color: black;
+}
+
+/* Các phần còn lại */
+.content {
+  flex: 65%;
+}
+
+.footer {
+  flex: 10%;
   background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
 }
-.content{
-  flex:65%;
-}
-.footer{
-  flex:10%;
-  background: #22C1C3;
-  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
-}
+
+/* Font styles */
 .f1 {
   font-style: italic;
-  font-weight:bold;
+  font-weight: bold;
   font-size: 50px;
-  font-family: "Times New Roman";
   text-align: center;
   text-transform: uppercase;
   color: blue;
 }
-.f2 {
-  font-style: italic;
-  font-weight:bold;
-  font-size: 30px;
-  font-family: "Times New Roman";
-  text-transform: uppercase;
-  color: red;
-}
-.menu a{
-  padding: 15px;20px;}
-.menu hover{
-  background-color: litghtgrey;
-  color:black;}
